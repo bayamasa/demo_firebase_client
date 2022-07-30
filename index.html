@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to sign in with email and password using Firebase Auth</title>
+  </head>
+  <body>
+    <h1>How to sign in with email and password using Firebase Auth</h1>
+    <section id="sectionSignin">
+      <h2>Sign in / Sign up</h2>
+      <form>
+        <div>
+          <label for="inputEmail">E-mail</label>
+          <input type="email" name="inputEmail" id="inputEmail">
+        </div>
+        <div>
+          <label for="inputPassword">Password</label>
+          <input type="password" name="inputPassword" id="inputPassword">
+        </div>
+        <button type="submit" id="buttonSignin" aria-describedby="errorMessage">Sign in</button>
+        or
+        <button type="button" id="buttonSignup" aria-describedby="errorMessage">Sign up</button>
+        <p id="errorMessage"></p>
+      </form>
+    </section>
+    <section id="sectionUser">
+      <h2>User information</h2>
+      <dl>
+        <dt>uid</dt>
+        <dd id="uid"></dd>
+      </dl>
+    </section>
+    <section id="sectionSignout">
+      <h2>Sign out</h2>
+      <button type="button" id="buttonSignout">Sign out</button>
+    </section>
+    <script src="js/app.js"></script>
+  </body>
+</html>
